@@ -1,0 +1,134 @@
+#include <iostream>
+using namespace std;
+
+// Function to read marks
+void readMarks(int marks[], int n)
+{
+    for (int i = 0; i < n; i++)
+    {
+        cout << "Enter mark of student " << i + 1 << ": ";
+        cin >> marks[i];
+
+        while (marks[i] < 0 || marks[i] > 100)
+        {
+            cout << "Invalid mark! Enter again: ";
+            cin >> marks[i];
+        }
+    }
+}
+
+// Function to calculate total
+int findTotal(int marks[], int n)
+{
+    int total = 0;
+
+    for (int i = 0; i < n; i++)
+    {
+        total = total + marks[i];
+    }
+
+    return total;
+}
+
+// Function to calculate average
+double findAverage(int marks[], int n)
+{
+    int total = findTotal(marks, n);
+    return (double)total / n;
+}
+
+// Function to find highest mark
+int findHighest(int marks[], int n)
+{
+    int highest = marks[0];
+
+    for (int i = 1; i < n; i++)
+    {
+        if (marks[i] > highest)
+        {
+            highest = marks[i];
+        }
+    }
+
+    return highest;
+}
+
+// Function to find lowest mark
+int findLowest(int marks[], int n)
+{
+    int lowest = marks[0];
+
+    for (int i = 1; i < n; i++)
+    {
+        if (marks[i] < lowest)
+        {
+            lowest = marks[i];
+        }
+    }
+
+    return lowest;
+}
+
+// Function to count passed students
+int countPassed(int marks[], int n)
+{
+    int passed = 0;
+
+    for (int i = 0; i < n; i++)
+    {
+        if (marks[i] >= 40)
+        {
+            passed++;
+        }
+    }
+
+    return passed;
+}
+
+// Function to print report
+void printReport(int marks[], int n)
+{
+    int total = findTotal(marks, n);
+    int passed = countPassed(marks, n);
+
+    cout << "\n===== STUDENT MARKS REPORT =====\n";
+
+    cout << "Total Marks: " << total << endl;
+    cout << "Average: " << findAverage(marks, n) << endl;
+    cout << "Highest Mark: " << findHighest(marks, n) << endl;
+    cout << "Lowest Mark: " << findLowest(marks, n) << endl;
+    cout << "Passed Students: " << passed << endl;
+    cout << "Failed Students: " << n - passed << endl;
+}
+
+// Main function
+int main()
+{
+    int n;
+    char choice;
+
+    do
+    {
+        cout << "\nEnter number of students (1-100): ";
+        cin >> n;
+
+        while (n < 1 || n > 100)
+        {
+            cout << "Invalid count! Enter again: ";
+            cin >> n;
+        }
+
+        int marks[100];
+
+        readMarks(marks, n);
+        printReport(marks, n);
+
+        cout << "\nDo you want to analyse again? (y/n): ";
+        cin >> choice;
+
+    } while (choice == 'y' || choice == 'Y');
+
+    cout << "\nThank you!\n";
+
+    return 0;
+}
