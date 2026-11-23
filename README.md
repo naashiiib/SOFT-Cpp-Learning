@@ -107,7 +107,7 @@ Example:
 batch[1].setMarks(45);
 ```
 
-This updates Akshitha's marks from 78 to 45.
+This updates Nashib's marks from 78 to 45.
 
 #### Source Code
 
