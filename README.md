@@ -93,9 +93,9 @@ A C++ program that manages student details and generates individual student resu
 
 | Roll No | Name | Marks |
 |---------|------|-------|
-| 1 | Andriya | 82 |
-| 2 | Akshitha | 78 |
-| 3 | Dakshin star | 75 |
+| 1 | Suhana | 82 |
+| 2 | Nashib | 78 |
+| 3 | Nesha | 75 |
 
 #### Re-evaluation
 
