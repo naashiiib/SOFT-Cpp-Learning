@@ -1,0 +1,22 @@
+[33mcommit a743c8fc3c785c773ad2ccc1eff2190c599ab428[m
+Author: Nashib. P <nashibbinu@gmail.com>
+Date:   Mon Nov 23 18:44:17 2026 +0530
+
+    Add new C++ practice files and Module 2 mini project
+
+ 11-11.2.cpp                                 |  26 [32m+++++++++[m
+ 11-11.3.cpp                                 |  24 [32m++++++++[m
+ 11-11.cpp                                   |  24 [32m++++++++[m
+ 16-11hw.cpp                                 |  30 [32m++++++++++[m
+ 18-11.2.cpp                                 |  23 [32m++++++++[m
+ 18-11.cpp                                   |  22 [32m+++++++[m
+ Loop lab.zip                                | Bin [31m5846[m -> [32m0[m bytes
+ Nestedif.cpp                                |   1 [31m-[m
+ New Text Document.txt => add-and-square.cpp |   0
+ car.cpp                                     |  24 [32m++++++++[m
+ hw1studentclass.cpp                         |  29 [32m++++++++++[m
+ hw2bankbalance.cpp                          |  44 [32m++++++++++++++[m
+ hw3product.cpp                              |  29 [32m++++++++++[m
+ miniproject1.cpp => miniproject-module1.cpp |   0
+ miniproject-module2.cpp                     |  86 [32m++++++++++++++++++++++++++++[m
+ 15 files changed, 361 insertions(+), 1 deletion(-)

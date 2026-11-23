@@ -114,7 +114,7 @@ int main()
 
         while (n < 1 || n > 100)
         {
-            cout << "Invalid count!  Enter again: ";
+            cout << "Invalid count! Enter again: ";
             cin >> n;
         }
 
