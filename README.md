@@ -94,7 +94,7 @@ A C++ program that manages student details and generates individual student resu
 | Roll No | Name | Marks |
 |---------|------|-------|
 | 1 | Suhana | 82 |
-| 2 | Nashib | 78 |
+| 2 | Sumi | 78 |
 | 3 | Nesha | 75 |
 
 #### Re-evaluation
@@ -107,7 +107,7 @@ Example:
 batch[1].setMarks(45);
 ```
 
-This updates Nashib's marks from 78 to 45.
+This updates Sumi's marks from 78 to 45.
 
 #### Source Code
 
