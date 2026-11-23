@@ -61,9 +61,9 @@ void printResult(Student s) {
 int main() {
 
     Student batch[3] = {
-        Student(1, "Andriya", 82),
-        Student(2, "Akshitha", 78),
-        Student(3, "Dakshin star", 75)
+        Student(1, "Suhana", 82),
+        Student(2, "Nashib", 78),
+        Student(3, "Nesha", 75)
     };
 
     cout << "STUDENT DETAILS" << endl;
